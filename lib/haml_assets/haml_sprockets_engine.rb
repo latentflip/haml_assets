@@ -15,6 +15,7 @@ module HamlAssets
           include Rails.application.routes.url_helpers
           include Rails.application.routes.mounted_helpers
           include ActionView::Helpers
+          include SimpleForm::ActionViewExtensions::FormHelper if SimpleForm
         end
       end
 
